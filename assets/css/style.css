@@ -66,6 +66,22 @@ a { color: inherit; }
 .news-archive article { padding: 22px 10px; border-bottom: 1px solid var(--line); }
 .news-archive h3 { margin: 0 0 8px; font-size: 17px; font-weight: 600; }
 .news-archive p { margin: 0; color: var(--muted); font-size: 14px; }
+.about-page-content { display: grid; gap: 30px; }
+.about-page-content section { min-width: 0; }
+.about-page-content p { margin: 0 0 12px; font-size: 14px; }
+.about-page-content p:last-child { margin-bottom: 0; }
+.policy-table-wrap { width: 100%; overflow-x: auto; }
+.policy-table { width: 100%; min-width: 600px; border-collapse: collapse; background: var(--white); font-size: 13px; line-height: 1.7; }
+.policy-table th, .policy-table td { padding: 10px 12px; border: 1px solid #dce9e1; text-align: left; }
+.policy-table thead th { background: #d8efe4; font-weight: 600; }
+.policy-table th:first-child, .policy-table td:first-child { width: 48px; text-align: center; }
+.faq-content { display: grid; gap: 30px; }
+.faq-content section { min-width: 0; }
+.faq-item { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.faq-item + .faq-item { padding-top: 18px; }
+.faq-item h4 { margin: 0 0 7px; font-size: 15px; font-weight: 600; }
+.faq-item p { margin: 0; color: var(--muted); font-size: 14px; }
+.faq-contact { margin: 0; font-size: 14px; }
 .small-button { justify-self: end; min-width: 108px; padding: 5px 14px; border: 0; border-radius: 999px; background: #e2e7e4; color: #343d38; font: inherit; font-size: 12px; line-height: 1.5; text-align: center; text-decoration: none; cursor: pointer; transition: background .2s,color .2s; }
 .small-button:hover, .small-button:focus-visible { color: var(--white); background: var(--green); }
 .more-link { display: table; margin: 22px auto 0; padding: 4px 20px; border-radius: 999px; background: #e4e9e6; color: #414c46; font-size: 13px; text-decoration: none; transition: background .2s; }
@@ -170,6 +186,13 @@ a { color: inherit; }
   .news-archive article { padding: 16px 2px; }
   .news-archive h3 { font-size: 14px; }
   .news-archive p { font-size: 12px; }
+  .about-page-content { gap: 24px; }
+  .about-page-content p { font-size: 12px; }
+  .policy-table { font-size: 11px; }
+  .policy-table th, .policy-table td { padding: 8px; }
+  .faq-content { gap: 24px; }
+  .faq-item h4 { font-size: 13px; }
+  .faq-item p, .faq-contact { font-size: 12px; }
   .more-link { margin-top: 16px; font-size: 11px; }
   .greeting-card { grid-template-columns: 1fr; gap: 16px; }
   .greeting-card > img { width: min(100%, 310px); aspect-ratio: 1.25 / 1; margin: 0 auto; object-position: right center; }
