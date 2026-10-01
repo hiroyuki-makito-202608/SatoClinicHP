@@ -25,12 +25,3 @@ if (menuButton && navigation) {
   });
 }
 
-document.querySelectorAll(".news-toggle").forEach((button) => {
-  button.addEventListener("click", () => {
-    const item = button.closest(".news-item");
-    const isExpanded = button.getAttribute("aria-expanded") === "true";
-    button.setAttribute("aria-expanded", String(!isExpanded));
-    button.textContent = isExpanded ? "詳細はこちら" : "閉じる";
-    item.classList.toggle("is-expanded", !isExpanded);
-  });
-});
