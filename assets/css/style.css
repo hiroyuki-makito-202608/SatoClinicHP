@@ -103,6 +103,7 @@ a { color: inherit; }
 .access-overview h4 { margin: 0 0 8px; font-size: 17px; }
 .access-overview p, .access-detail-grid p { margin: 5px 0; font-size: 13px; }
 .access-detail-grid { display: grid; grid-template-columns: 1fr; gap: 26px; margin-top: 34px; }
+.access-detail-grid > div:first-child .table-wrap { max-width: 850px; }
 .hours-table.compact { min-width: 560px; font-size: 12px; }
 .hours-table.compact th, .hours-table.compact td { padding: 8px 5px; }
 .hours-table.compact tbody th { min-width: 100px; }
@@ -110,7 +111,7 @@ a { color: inherit; }
 .hours-table.compact td { font-size: 15px; }
 .table-caption { color: var(--muted); font-size: 12px !important; }
 .plain-list { margin: 0 0 12px; padding-left: 1.2em; font-size: 13px; }
-.contact-block { grid-column: 1 / -1; max-width: 600px; }
+.contact-block { grid-column: 1 / -1; }
 .contact-block a { color: var(--green-dark); }
 .site-footer { position: relative; background: var(--green); color: var(--white); }
 .footer-inner { width: min(calc(100% - 48px), var(--content)); margin: 0 auto; padding: 32px 0 20px; text-align: center; }
