@@ -81,9 +81,9 @@ a { color: inherit; }
 .medical-copy { padding: 12px 5px; }
 .medical-copy h3, .about-card h3 { margin: 0 0 10px; font-size: 19px; font-weight: 600; }
 .medical-copy p, .about-card p { margin: 0; font-size: 14px; }
-.about-card { display: flex; align-items: center; justify-content: space-between; gap: 36px; }
+.about-card { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
 .about-card > div { flex: 1; }
-.about-card .small-button { flex: 0 0 auto; }
+.about-card .small-button { flex: 0 0 auto; align-self: center; }
 .staff-list { display: grid; gap: 25px; }
 .staff-card { display: grid; grid-template-columns: minmax(170px, 245px) 1fr; gap: 28px; align-items: center; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
 .staff-card:last-child { border-bottom: 0; }
@@ -102,7 +102,7 @@ a { color: inherit; }
 .map-image { width: 100%; aspect-ratio: 1.55 / 1; object-fit: cover; }
 .access-overview h4 { margin: 0 0 8px; font-size: 17px; }
 .access-overview p, .access-detail-grid p { margin: 5px 0; font-size: 13px; }
-.access-detail-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 38px 44px; margin-top: 34px; }
+.access-detail-grid { display: grid; grid-template-columns: 1fr; gap: 26px; margin-top: 34px; }
 .hours-table.compact { min-width: 560px; font-size: 12px; }
 .hours-table.compact th, .hours-table.compact td { padding: 8px 5px; }
 .hours-table.compact tbody th { min-width: 100px; }
