@@ -18,7 +18,7 @@ if (menuButton && navigation) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 760) {
+    if (window.innerWidth > 1100) {
       menuButton.setAttribute("aria-expanded", "false");
       navigation.classList.remove("is-open");
     }
