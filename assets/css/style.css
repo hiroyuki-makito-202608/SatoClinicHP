@@ -184,7 +184,7 @@ a { color: inherit; }
   .hero-content { width: calc(100% - 36px); padding: 72px 0 40px; }
   .hero-kicker { font-size: calc(12px + var(--font-increase)); margin-bottom: 6px; }
   .hero h1 { max-width: 270px; font-size: calc(clamp(27px, 7vw, 36px) + var(--font-increase)); line-height: 1.5; }
-  .hero-content > p:last-child { max-width: 240px; font-size: calc(14px + var(--font-increase)); }
+  .hero-content > p:last-child { max-width: 320px; font-size: calc(14px + var(--font-increase)); }
   .section { padding-bottom: 48px; }
   .section-heading { min-height: 44px; }
   .section-heading h2 { width: calc(100% - 32px); font-size: calc(16px + var(--font-increase)); }
