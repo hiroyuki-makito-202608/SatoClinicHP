@@ -87,10 +87,9 @@ a { color: inherit; }
 .faq-item p { margin: 0; color: var(--muted); font-size: 14px; }
 .faq-contact { margin: 0; font-size: 14px; }
 .small-button { justify-self: end; min-width: 108px; padding: 5px 14px; border: 0; border-radius: 999px; background: #e2e7e4; color: #343d38; font: inherit; font-size: 12px; line-height: 1.5; text-align: center; text-decoration: none; cursor: pointer; transition: background .2s,color .2s; }
-.small-button:hover, .small-button:focus-visible { color: var(--white); background: var(--green); }
-.more-link { display: table; margin: 22px auto 0; padding: 4px 20px; border-radius: 999px; background: #e4e9e6; color: #414c46; font-size: 13px; text-decoration: none; transition: background .2s; }
+.small-button:hover, .small-button:focus-visible, .more-link:hover, .more-link:focus-visible { color: var(--white); background: var(--green); }
+.more-link { display: table; margin: 22px auto 0; padding: 4px 20px; border-radius: 999px; background: #e4e9e6; color: #414c46; font-size: 13px; text-decoration: none; transition: background .2s,color .2s; }
 .more-link span { margin-left: 8px; font-size: 18px; line-height: 0; }
-.more-link:hover, .more-link:focus-visible { background: var(--mint); }
 .greeting-card { display: grid; grid-template-columns: minmax(220px, 310px) 1fr; gap: 36px; align-items: start; }
 .greeting-card > img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 83% center; }
 .greeting-copy p { margin: 0 0 14px; font-size: 14px; }
@@ -139,7 +138,7 @@ a { color: inherit; }
 .hours-note.table-caption > p { font-size: 15px; }
 .plain-list { margin: 0 0 12px; padding-left: 1.2em; font-size: 13px; }
 .contact-block { grid-column: 1 / -1; }
-.contact-block a { color: var(--green-dark); }
+.contact-block a:not(.more-link) { color: var(--green-dark); }
 .site-footer { position: relative; background: var(--green); color: var(--white); }
 .footer-inner { width: min(calc(100% - 48px), var(--content)); margin: 0 auto; padding: 32px 0 20px; text-align: center; }
 .footer-brand { display: inline-block; width: 150px; padding: 7px 10px; background: var(--white); border-radius: 4px; }
