@@ -49,8 +49,8 @@ a { color: inherit; }
 .hours-table { width: 100%; min-width: 620px; border-collapse: collapse; background: var(--white); text-align: center; font-size: 14px; line-height: 1.5; }
 .hours-table th, .hours-table td { padding: 12px 8px; border: 1px solid #dce9e1; }
 .hours-table thead th { background: #d8efe4; font-weight: 600; }
-.hours-table tbody th { background: #e9f5ef; min-width: 118px; font-weight: 600; }
-.hours-table tbody th span { font-size: 12px; font-weight: 400; }
+.hours-table tbody th { background: #e9f5ef; width: 79px; min-width: 79px; font-weight: 600; }
+.hours-table tbody th span { font-size: 12px; font-weight: 400; white-space: nowrap; }
 .hours-table td { font-size: 18px; color: var(--green-dark); }
 .hours-table td.closed { color: #6c7771; }
 .hours-note { padding-top: 10px; color: var(--muted); font-size: 13px; }
@@ -122,10 +122,11 @@ a { color: inherit; }
 .access-overview h4 { margin: 0 0 8px; font-size: 17px; }
 .access-overview p, .access-detail-grid p { margin: 5px 0; font-size: 13px; }
 .access-detail-grid { display: grid; grid-template-columns: 1fr; gap: 26px; margin-top: 34px; }
+.access-detail-grid > div { min-width: 0; }
 .access-detail-grid > div:first-child .table-wrap { max-width: 850px; }
 .hours-table.compact { min-width: 560px; font-size: 12px; }
 .hours-table.compact th, .hours-table.compact td { padding: 8px 5px; }
-.hours-table.compact tbody th { min-width: 100px; }
+.hours-table.compact tbody th { width: 67px; min-width: 67px; }
 .hours-table.compact tbody th span { font-size: 11px; }
 .hours-table.compact td { font-size: 15px; }
 .table-caption { color: var(--muted); font-size: 12px !important; }
@@ -174,7 +175,7 @@ a { color: inherit; }
   .hours-layout { width: calc(100% - 24px); }
   .hours-table { min-width: 550px; font-size: 12px; }
   .hours-table th, .hours-table td { padding: 8px 5px; }
-  .hours-table tbody th { min-width: 91px; }
+  .hours-table tbody th, .hours-table.compact tbody th { width: 61px; min-width: 61px; }
   .hours-table tbody th span { font-size: 10px; }
   .hours-table td { font-size: 15px; }
   .hours-note { font-size: 11px; }
@@ -221,7 +222,7 @@ a { color: inherit; }
   .map-image { aspect-ratio: 1.45 / 1; }
   .access-overview p, .access-detail-grid p { font-size: 11px; }
   .access-detail-grid { grid-template-columns: 1fr; gap: 26px; margin-top: 26px; }
-  .hours-table.compact { min-width: 520px; }
+  .hours-table.compact { min-width: 550px; }
   .contact-block { grid-column: auto; }
   .footer-inner { width: calc(100% - 32px); padding: 26px 0 17px; }
   .footer-brand { width: 130px; }
